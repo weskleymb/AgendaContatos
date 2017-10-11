@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Contacts\' Agend</string>
+    <string name="contatos">Contacts</string>
+    <string name="editar">Edit</string>
+    <string name="excluir">Delete</string>
+    <string name="inserir">Insert</string>
+    <string name="fone">Type the phone here</string>
+    <string name="nome">Type the name here</string>
+</resources>
