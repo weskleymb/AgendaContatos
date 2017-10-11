@@ -11,6 +11,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import br.edu.ifrn.agendacontatos.adapters.ContatoAdapter;
 import br.edu.ifrn.agendacontatos.daos.ContatoDAO;
 import br.edu.ifrn.agendacontatos.models.Contato;
 
@@ -32,7 +33,7 @@ public class ContatoVIEW extends AppCompatActivity {
 
         final ContatoDAO dao = new ContatoDAO();
 
-        ArrayAdapter<Contato> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, dao.listarTodos());
+        ContatoAdapter adapter = new ContatoAdapter(this, dao.listarTodos());
         lvListaContatos.setAdapter(adapter);
 
         btInserir.setOnClickListener(new View.OnClickListener() {
